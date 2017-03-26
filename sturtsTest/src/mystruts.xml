@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mystruts>
+
+	<package>
+		
+		<action name = "login" class = "cn.itcast.framework.action.LoginAction" method = "login">
+			<result name = "loginSuccess" type = "redirect">/index.jsp</result>
+			<result name = "loginFaild">/login.jsp</result>
+		</action>	
+	
+		<action name="register" class = "cn.itcast.framework.action.RegisterAction" method = "register">
+			<result name = "registerSuccess">/login</result>			
+		</action>
+	
+	</package>
+
+</mystruts>
